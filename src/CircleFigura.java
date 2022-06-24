@@ -1,11 +1,10 @@
-package src;
-
 public class CircleFigura extends BaseFigura {
     public CircleFigura(int x, int y) {
         super(x, y);
     }
-    public static void area(int x, int y){
+    public double area(){
         int d = x + y;
-        System.out.println("Площадь круга: " + (d * d) / (4 * 3.14));
+        double s = (d * d) / (4 * 3.14);
+        return (s);
     }
 }
